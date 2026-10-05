@@ -172,7 +172,7 @@ class CADController:
         """
         # 各CAD软件的COM ProgID映射（未匹配的类型回退到AutoCAD）
         app_map = {
-            "autocad": (["AutoCAD.Application"], "AutoCAD"),
+            "autocad": (["AutoCAD.Application", "AutoCAD.Application.25"], "AutoCAD"),
             "gcad": (["GCAD.Application", "GstarCAD.Application"], "浩辰CAD"),
             "gstarcad": (["GCAD.Application", "GstarCAD.Application"], "浩辰CAD"),
             "zwcad": (["ZWCAD.Application"], "中望CAD"),
